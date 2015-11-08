@@ -18,31 +18,35 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/one", name="onecolumn")
+     * @Route("/rolunk", name="about")
      * @Template()
      */
-    public function onecolumnAction()
+    public function aboutAction()
     {
         return array();
     }
 
     /**
-     * @Route("/two1", name="twocolumn1")
+     * @Route("/esemenyek", name="events")
      * @Template()
      */
-    public function twocolumn1Action()
+    public function eventsAction()
     {
         return array();
     }
 
     /**
-     * @Route("/two2", name="twocolumn2")
+     * @Route("/kapcsolat", name="contact")
      * @Template()
      */
-    public function twocolumn2Action()
+    public function contactAction()
     {
         return array();
     }
+
+
+
+
 
     /**
      * @Route("/three", name="threecolumn")
