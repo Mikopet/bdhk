@@ -6,14 +6,14 @@
 -->
 <html>
 <head>
-    <title>Halcyonic by HTML5 UP</title>
+    <title>Bánki Donát Hagyományőrző Kör</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="{{ asset('bundles/main/js/ie/html5shiv.js') }}"></script><![endif]-->
+    <!--[if lte IE 8]><script src="{{ asset('bundles/main/js/ie/html5shiv.js') }}"></script><![endif]-->
     <link rel="stylesheet" href="{{ asset('bundles/main/css/main.css') }}"/>
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="{{ asset('bundles/main/css/ie9.css') }}"/><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('bundles/main/css/ie9.css') }}"/><![endif]-->
+
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />
 </head>
 <body>
 <div id="page-wrapper">
@@ -25,14 +25,15 @@
                 <div class="12u">
 
                     <!-- Logo -->
-                    <h1><a href="#" id="logo">Halcyonic</a></h1>
+                    <h1><a href="{{ path('index') }}" id="logo">Bánki Donát Hagyományőrző Kör</a></h1>
 
                     <!-- Nav -->
                     <nav id="nav">
-                        <a href="{{ path('index') }}">Homepage</a>
+                        <a href="{{ path('index') }}">Főoldal</a>
+                        <a href="{{ path('twocolumn2') }}">Rólunk</a>
                         <a href="{{ path('threecolumn') }}">Three Column</a>
                         <a href="{{ path('twocolumn1') }}">Two Column #1</a>
-                        <a href="{{ path('twocolumn2') }}">Two Column #2</a>
+
                         <a href="{{ path('onecolumn') }}">One Column</a>
                     </nav>
 
@@ -52,7 +53,7 @@
 
                     <!-- Links -->
                     <section>
-                        <h2>Links to Important Stuff</h2>
+                        <h2>Linkek mindenféléhez</h2>
 
                         <div>
                             <div class="row">
@@ -97,13 +98,10 @@
 
                     <!-- Blurb -->
                     <section>
-                        <h2>An Informative Text Blurb</h2>
+                        <h2>Információ</h2>
 
                         <p>
-                            Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
-                            varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
-                            dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
-                            lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
+                            Itt bizony mindenféle random butaság felbukkanhat. Egyelőre conceptionless
                         </p>
                     </section>
 
@@ -124,8 +122,7 @@
 <script src="{{ asset('bundles/main/js/skel.min.js') }}"></script>
 <script src="{{ asset('bundles/main/js/skel-viewport.min.js') }}"></script>
 <script src="{{ asset('bundles/main/js/util.js') }}"></script>
-<!--[if lte IE 8]>
-<script src="{{ asset('bundles/main/js/ie/respond.min.js') }}"></script><![endif]-->
+<!--[if lte IE 8]><script src="{{ asset('bundles/main/js/ie/respond.min.js') }}"></script><![endif]-->
 <script src="{{ asset('bundles/main/js/main.js') }}"></script>
 
 </body>
