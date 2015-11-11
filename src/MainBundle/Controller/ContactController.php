@@ -6,22 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-class DefaultController extends Controller
+class ContactController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/kapcsolat", name="contact")
      * @Template()
      */
     public function indexAction()
-    {
-        return array();
-    }
-
-    /**
-     * @Route("/three", name="three")
-     * @Template()
-     */
-    public function threeAction()
     {
         return array();
     }

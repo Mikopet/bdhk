@@ -25,16 +25,14 @@
                 <div class="12u">
 
                     <!-- Logo -->
-                    <h1><a href="{{ path('index') }}" id="logo">Bánki Donát Hagyományőrző Kör</a></h1>
+                    <h1><a href="{{ path('homepage') }}" id="logo">Bánki Donát Hagyományőrző Kör</a></h1>
 
                     <!-- Nav -->
                     <nav id="nav">
-                        <a href="{{ path('index') }}">Főoldal</a>
+                        <a href="{{ path('homepage') }}">Főoldal</a>
                         <a href="{{ path('about') }}">Rólunk</a>
                         <a href="{{ path('events') }}">Események</a>
-                        <a href="{{ path('threecolumn') }}">Three Column</a>
-
-
+                        <a href="{{ path('three') }}">Three Column</a>
                         <a href="{{ path('contact') }}">Kapcsolat</a>
                     </nav>
 
@@ -43,8 +41,7 @@
         </header>
         {% block banner %}{% endblock %}
     </div>
-    {% block content %}{% endblock %}
-
+    {% block body %}{% endblock %}
 
     <!-- Footer -->
     <div id="footer-wrapper">

@@ -1,40 +1,37 @@
 {% extends 'MainBundle:Default:base.html.twig' %}
 
 {% block banner %}
-<div id="banner">
-    <div class="container">
-        <div class="row">
-            <div class="6u 12u(mobile)">
-
-                <!-- Banner Copy -->
-                <p>Hallottál rólunk? Belépnél? Itt a lehetőség! Kattints az alábbi gombra, és néhány kérdés utám fel is írunk a listára ...</p>
-                <a href="#" class="button-big">Csatlakozni akarok!</a>
-
-            </div>
-            <div class="6u 12u(mobile)">
-
-                <!-- Banner Image -->
-                <a href="#" class="bordered-feature-image"><img
-                            src="{{ asset('bundles/main/images/banner.jpg') }}" alt=""/></a>
-
+    <div id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="6u 12u(mobile)">
+                    <!-- Banner Copy -->
+                    <p>Hallottál rólunk? Belépnél? Itt a lehetőség! Kattints az alábbi gombra, és néhány kérdés utám fel is írunk a listára ...</p>
+                    <a href="#" class="button-big">Csatlakozni akarok!</a>
+                </div>
+                <div class="6u 12u(mobile)">
+                    <!-- Banner Image -->
+                    <a href="#" class="bordered-feature-image">
+                        <img src="{{ asset('bundles/main/images/banner.jpg') }}" alt=""/>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}
 
-{% block content %}
+{% block body %}
     <!-- Features -->
     <div id="features-wrapper">
         <div id="features">
             <div class="container">
                 <div class="row">
                     <div class="3u 12u(mobile)">
-
                         <!-- Feature #1 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img
-                                        src="{{ asset('bundles/main/images/pic01.jpg') }}" alt=""/></a>
+                            <a href="#" class="bordered-feature-image">
+                                <img src="{{ asset('bundles/main/images/pic01.jpg') }}" alt=""/>
+                            </a>
 
                             <h2>Legutóbbi esemény</h2>
 
@@ -49,8 +46,9 @@
 
                         <!-- Feature #2 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img
-                                        src="{{ asset('bundles/main/images/pic02.jpg') }}" alt=""/></a>
+                            <a href="#" class="bordered-feature-image">
+                                <img src="{{ asset('bundles/main/images/pic02.jpg') }}" alt=""/>
+                            </a>
 
                             <h2>Azelőtti esemény</h2>
 
@@ -64,8 +62,9 @@
 
                         <!-- Feature #3 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img
-                                        src="{{ asset('bundles/main/images/pic03.jpg') }}" alt=""/></a>
+                            <a href="#" class="bordered-feature-image">
+                                <img src="{{ asset('bundles/main/images/pic03.jpg') }}" alt=""/>
+                            </a>
 
                             <h2>Ballagás</h2>
 
@@ -79,8 +78,9 @@
 
                         <!-- Feature #4 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img
-                                        src="{{ asset('bundles/main/images/pic04.jpg') }}" alt=""/></a>
+                            <a href="#" class="bordered-feature-image">
+                                <img src="{{ asset('bundles/main/images/pic04.jpg') }}" alt=""/>
+                            </a>
 
                             <h2>Jubiláló, vagy zúzós</h2>
 
@@ -109,8 +109,9 @@
 
                                 <h3>diákok ...</h3>
                             </header>
-                            <a href="#" class="feature-image"><img src="{{ asset('bundles/main/images/pic05.jpg') }}"
-                                                                   alt=""/></a>
+                            <a href="#" class="feature-image">
+                                <img src="{{ asset('bundles/main/images/pic05.jpg') }}" alt=""/>
+                            </a>
 
                             <p>
                                 Célunk diákhagyományok ápolása, egyéb szöveg, amit majd más megír hosszan és sejtelmesen
