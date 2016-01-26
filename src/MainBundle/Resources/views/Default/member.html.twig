@@ -1,0 +1,13 @@
+{% if app.user %}
+    <div style="position: fixed; top: 10px; right: 15px; padding: 10px; color: white; background-color: grey;">
+
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            Helló {{ app.user.username }}!<br/>
+            <a href="{{ path('fos_user_security_logout') }}">
+                {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+            </a>
+
+        {% endif %}
+
+    </div>
+{% endif %}

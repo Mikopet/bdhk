@@ -20,6 +20,7 @@
 
     <!-- Header -->
     <div id="header-wrapper">
+        {% include 'MainBundle:Default:member.html.twig' %}
         <header id="header" class="container">
             <div class="row">
                 <div class="12u">
@@ -38,7 +39,9 @@
 
                 </div>
             </div>
+
         </header>
+
         {% block banner %}{% endblock %}
     </div>
     {% block body %}{% endblock %}
@@ -57,7 +60,7 @@
                             <div class="row">
                                 <div class="3u 12u(mobile)">
                                     <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
+                                        <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
                                         <li><a href="#">Sed mattis quis rutrum</a></li>
                                         <li><a href="#">Accumsan suspendisse</a></li>
                                         <li><a href="#">Eu varius vitae magna</a></li>
