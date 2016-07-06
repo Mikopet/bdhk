@@ -1,0 +1,23 @@
+{% extends 'MainBundle:Default:base.html.twig' %}
+
+{% block body %}
+	<!-- Content -->
+	<div id="content-wrapper">
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="12u">
+						<!-- Main Content -->
+						{% block topbar %}{% endblock %}
+					</div>
+				</div>
+				<div class="row">
+					<div class="12u">
+						<!-- Sidebar -->
+						{% block content %}{% endblock %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

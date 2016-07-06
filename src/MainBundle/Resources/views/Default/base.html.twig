@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ asset('bundles/main/css/main.css') }}"/>
     <!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('bundles/main/css/ie9.css') }}"/><![endif]-->
 
+    {% block stylesheets %}{% endblock %}
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />
 </head>
 <body>
@@ -125,6 +126,6 @@
 <script src="{{ asset('bundles/main/js/util.js') }}"></script>
 <!--[if lte IE 8]><script src="{{ asset('bundles/main/js/ie/respond.min.js') }}"></script><![endif]-->
 <script src="{{ asset('bundles/main/js/main.js') }}"></script>
-
+{% block javascripts %}{% endblock %}
 </body>
 </html>

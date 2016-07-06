@@ -18,6 +18,37 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="rank", type="integer")
+     */
+    private $rank;
+
+    /**
+     * Set rank
+     *
+     * @param integer $rank
+     *
+     * @return Rank
+     */
+    public function setRank($rank)
+    {
+        $this->rank = $rank;
+
+        return $this;
+    }
+
+    /**
+     * Get rank
+     *
+     * @return integer
+     */
+    public function getRank()
+    {
+        return $this->rank;
+    }
+
     public function __construct()
     {
         parent::__construct();
