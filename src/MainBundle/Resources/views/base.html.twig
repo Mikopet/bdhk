@@ -21,7 +21,7 @@
 
     <!-- Header -->
     <div id="header-wrapper">
-        {% include 'MainBundle:Default:member.html.twig' %}
+        {% include 'MainBundle::member.html.twig' %}
         <header id="header" class="container">
             <div class="row">
                 <div class="12u">
@@ -61,34 +61,30 @@
                             <div class="row">
                                 <div class="3u 12u(mobile)">
                                     <ul class="link-list last-child">
-                                        <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
+                                        <li><a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a></li>
+                                        <li><a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a></li>
+                                        <li><a href="{{ path('homepage') }}">Adminisztráció</a></li>
                                     </ul>
                                 </div>
                                 <div class="3u 12u(mobile)">
                                     <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
+                                        <li><a href="{{ path('homepage') }}">Főoldal</a></li>
+                                        <li><a href="{{ path('about') }}">Rólunk</a></li>
+                                        <li><a href="{{ path('gallery') }}">Galéria</a></li>
+                                        <li><a href="{{ path('contact') }}">Kapcsolat</a></li>
                                     </ul>
                                 </div>
                                 <div class="3u 12u(mobile)">
                                     <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
+                                        <li><a href="//uni-obuda.hu" target="_blank">Óbudai Egyetem</a></li>
+                                        <li><a href="//www.banki.hu" target="_blank">Bánki Donát Kar</a></li>
+
                                     </ul>
                                 </div>
                                 <div class="3u 12u(mobile)">
                                     <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
+                                        <li><a href="//joszerencset.hu" target="_blank">Jó Szerencsét!</a></li>
+                                        <li><a href="//selmeciszellem.hu" target="_blank">Selmeci Szellem</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -100,10 +96,10 @@
 
                     <!-- Blurb -->
                     <section>
-                        <h2>Információ</h2>
+                        <h2>Random</h2>
 
                         <p>
-                            Itt bizony mindenféle random butaság felbukkanhat. Egyelőre conceptionless
+                            "Melyik mondta, hogy lemerült az aggregátor?"
                         </p>
                     </section>
 
@@ -114,7 +110,7 @@
 
     <!-- Copyright -->
     <div id="copyright">
-        &copy; Bánki Donát Hagyományőrző Kör. Minden jog fenntartva. | Design: <a href="http://html5up.net">HTML5 UP</a> | coded by: <a href="//mikopet.me">Mikopet</a>
+        &copy; Bánki Donát Hagyományőrző Kör. Minden jog fenntartva. | Design: <a href="//html5up.net">HTML5 UP</a> | coded by: <a href="//mikopet.me">Mikopet</a>
     </div>
 
 </div>

@@ -1,4 +1,4 @@
-{% extends 'MainBundle:Default:base.html.twig' %}
+{% extends 'MainBundle::base.html.twig' %}
 
 {% block body %}
 	<!-- Content -->
@@ -8,12 +8,6 @@
 				<div class="row">
 					<div class="12u">
 						<!-- Main Content -->
-						{% block topbar %}{% endblock %}
-					</div>
-				</div>
-				<div class="row">
-					<div class="12u">
-						<!-- Sidebar -->
 						{% block content %}{% endblock %}
 					</div>
 				</div>
