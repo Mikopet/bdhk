@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     {% block stylesheets %}
-        {% stylesheets 'bundles/main/sass/main.scss' filter='scssphp' %}
+        {% stylesheets 'bundles/main/sass/*' filter='scssphp' %}
             <link rel="stylesheet" href="{{ asset_url }}" />
         {% endstylesheets %}
     {% endblock %}
@@ -23,7 +23,6 @@
 
     <!-- Header -->
     <div id="header-wrapper">
-        {% include 'MainBundle::member.html.twig' %}
         <header id="header" class="container">
             <div class="row">
                 <div class="12u">
@@ -63,9 +62,20 @@
                             <div class="row">
                                 <div class="3u 12u(mobile)">
                                     <ul class="link-list last-child">
-                                        <li><a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a></li>
-                                        <li><a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a></li>
-                                        <li><a href="{{ path('homepage') }}">Adminisztráció</a></li>
+                                        {% if app.user %}
+                                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                                Helló {{ app.user.username }}!<br/>
+                                                <a href="{{ path('fos_user_security_logout') }}">
+                                                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                                                </a>
+                                            {% endif %}
+                                        {% else %}
+                                            <li><a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a></li>
+                                            <li><a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a></li>
+                                        {% endif %}
+                                        {% if is_granted("ROLE_ADMIN") %}
+                                            <li><a href="{{ path('homepage') }}">Adminisztráció</a></li>
+                                        {%  endif %}
                                     </ul>
                                 </div>
                                 <div class="3u 12u(mobile)">
