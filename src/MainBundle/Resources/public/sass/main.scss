@@ -48,7 +48,7 @@
 /* Basic */
 
 	body {
-		background: #D4D9DD url('../bundles/images/css/bg03.jpg');
+		background: #D4D9DD url('../bundles/main/images/css/bg03.jpg');
 		color: #474f51;
 		font-size: 13.5pt;
 		font-family: 'Stint Ultra Condensed', cursive;
@@ -137,7 +137,7 @@
 		li {
 			padding: 0.7em 0 0.7em 45px;
 			font-size: 1.2em;
-			background: url('../bundles/images/css/icon-checkmark.png') 0px 1.05em no-repeat;
+			background: url('../bundles/main/images/css/icon-checkmark.png') 0px 1.05em no-repeat;
 
 			&:first-child {
 				padding-top: 0 !important;
@@ -165,7 +165,7 @@
 
 	.bordered-feature-image {
 		display: block;
-		background: #fff url('../bundles/images/css/bg04.png');
+		background: #fff url('../bundles/main/images/css/bg04.png');
 		padding: 10px;
 		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
 		margin: 0 0 1.5em 0;
@@ -267,7 +267,7 @@
 		/* Wrappers */
 
 			#header-wrapper {
-				background: #3B4346 url('../bundles/images/css/bg01.jpg');
+				background: #3B4346 url('../bundles/main/images/css/bg01.jpg');
 				border-bottom: solid 1px #272d30;
 				box-shadow: inset 0px -1px 0px 0px #51575a;
 				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
@@ -278,14 +278,14 @@
 			}
 
 			#features-wrapper {
-				background: #353D40 url('../bundles/images/css/bg02.jpg');
+				background: #353D40 url('../bundles/main/images/css/bg02.jpg');
 				border-bottom: solid 1px #272e31;
 				padding: 45px 0 45px 0;
 				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 			}
 
 			#content-wrapper {
-				background: #f7f7f7 url('../bundles/images/css/bg04.png');
+				background: #f7f7f7 url('../bundles/main/images/css/bg04.png');
 				border-top: solid 1px #fff;
 				padding: 45px 0 45px 0;
 			}
@@ -577,19 +577,19 @@
 
 		/* Wrappers */
 			#header-wrapper {
-				background: #3B4346 url('../bundles/images/css/bg01.jpg') top center;
+				background: #3B4346 url('../bundles/main/images/css/bg01.jpg') top center;
 				box-shadow: inset 0px -1px 0px 0px #272d30, inset 0px -2px 0px 0px #51575a;
 				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 			}
 
 			#features-wrapper {
-				background: #353D40 url('../bundles/images/css/bg02.jpg');
+				background: #353D40 url('../bundles/main/images/css/bg02.jpg');
 				padding: 15px 15px 30px 15px;
 				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 			}
 
 			#content-wrapper {
-				background: #f7f7f7 url('../bundles/images/css/bg04.png');
+				background: #f7f7f7 url('../bundles/main/images/css/bg04.png');
 				padding: 5px;
 			}
 
@@ -750,7 +750,7 @@
 				width: 100%;
 				z-index: _misc(z-index-base) + 1;
 				color: #fff;
-				background: url('../bundles/images/css/bg04.jpg');
+				background: url('../bundles/main/images/css/bg04.jpg');
 				box-shadow: inset 0px -20px 70px 0px rgba(200, 220, 245, 0.1), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.1), 0px 1px 7px 0px rgba(0, 0, 0, 0.6);
 				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 
@@ -789,7 +789,7 @@
 						position: absolute;
 						width: 20px;
 						height: 30px;
-						background: url('../bundles/images/css/mobileUI-site-nav-opener-bg.svg');
+						background: url('../bundles/main/images/css/mobileUI-site-nav-opener-bg.svg');
 						top: 15px;
 						left: 20px;
 						z-index: 1;
@@ -816,7 +816,7 @@
 				top: 0;
 				width: _size(navPanel);
 				z-index: _misc(z-index-base) + 2;
-				background: url('../bundles/images/css/bg04.jpg');
+				background: url('../bundles/main/images/css/bg04.jpg');
 				box-shadow: inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25), inset -2px 0px 25px 0px rgba(0, 0, 0, 0.5);
 				text-shadow: -1px -1px 1px rgba(0, 0, 0, 1);
 
