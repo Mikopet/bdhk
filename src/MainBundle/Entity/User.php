@@ -21,7 +21,7 @@ class User extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="rank", type="integer")
+     * @ORM\Column(name="rank", type="integer", options={"default" : 0})
      */
     private $rank;
 
