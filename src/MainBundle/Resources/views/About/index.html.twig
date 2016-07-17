@@ -25,17 +25,10 @@
             <li><a href="{{ path('about_members') }}">Tagok</a></li>
             <li><a href="{{ path('about_tables') }}">Asztaltársaságok</a></li>
             <li><a href="{{ path('about_songs') }}">Nóták</a></li>
+            <li><a href="{{ path('about_jugs') }}">Korsók</a></li>
         </ul>
     </section>
 {% endblock %}
 {% block content %}
-	<section>
-		<header>
-			<h2>Aki kíváncsi, hamar ...</h2>
-			<h3>... megtud rólunk mindent</h3>
-		</header>
-		<p>
-			Kattints a bal oldalt, és máris megtudhatsz mindenféle okosságot.
-		</p>
-	</section>
+    {% include ['MainBundle:About:stuff/'~subsite~'.html.twig', 'MainBundle:About:stuff/_default.html.twig'] ignore missing %}
 {% endblock %}

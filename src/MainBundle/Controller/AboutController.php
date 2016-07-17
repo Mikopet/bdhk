@@ -9,15 +9,17 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class AboutController extends Controller
 {
     /**
+     * @param $aid string
+     * @return array
+     *
      * @Route("/rolunk/{aid}", name="about", defaults={"aid" = "tortenet"})
      * @Template()
      */
     public function indexAction($aid)
     {
-        if ( $this->get('templating')->exists('MainBundle:About:_'.$aid.'.html.twig') ) {
-            return $this->render('MainBundle:About:_'.$aid.'.html.twig');
-        }
-        return array();
+        return array(
+            "subsite" => $aid
+        );
     }
 
     /**
@@ -26,7 +28,9 @@ class AboutController extends Controller
      */
     public function membersAction()
     {
-        return array();
+        return array(
+            "users" => $this->get('fos_user.user_manager')->findUsers()
+        );
     }
 
     /**
@@ -43,6 +47,15 @@ class AboutController extends Controller
      * @Template()
      */
     public function songsAction()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/korsok", name="about_jugs")
+     * @Template()
+     */
+    public function jugsAction()
     {
         return array();
     }

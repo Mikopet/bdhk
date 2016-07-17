@@ -4,10 +4,14 @@
     <section>
         <header>
             <h2>Tagok</h2>
-            <h3>rang szerint!</h3>
+            <h3>valamilyen sorrendben</h3>
         </header>
         <p>
-            bizony...
+            <ul>
+            {% for user in users %}
+                <li>{{ user.username|e }}</li>
+            {% endfor %}
+            </ul>
         </p>
     </section>
 {% endblock %}
