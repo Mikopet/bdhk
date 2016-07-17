@@ -8,3 +8,5 @@
 /vendor/
 /web/bundles/
 /.idea/
+/web/css/
+/web/js/

@@ -9,11 +9,13 @@
     <title>Bánki Donát Hagyományőrző Kör</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]><script src="{{ asset('bundles/main/js/ie/html5shiv.js') }}"></script><![endif]-->
-    <link rel="stylesheet" href="{{ asset('bundles/main/css/main.css') }}"/>
-    <!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('bundles/main/css/ie9.css') }}"/><![endif]-->
 
-    {% block stylesheets %}{% endblock %}
+    {% block stylesheets %}
+        {% stylesheets 'bundles/main/sass/main.scss' filter='scssphp' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />
 </head>
 <body>
@@ -116,12 +118,11 @@
 </div>
 
 <!-- Scripts -->
-<script src="{{ asset('bundles/main/js/jquery.min.js') }}"></script>
-<script src="{{ asset('bundles/main/js/skel.min.js') }}"></script>
-<script src="{{ asset('bundles/main/js/skel-viewport.min.js') }}"></script>
-<script src="{{ asset('bundles/main/js/util.js') }}"></script>
-<!--[if lte IE 8]><script src="{{ asset('bundles/main/js/ie/respond.min.js') }}"></script><![endif]-->
-<script src="{{ asset('bundles/main/js/main.js') }}"></script>
-{% block javascripts %}{% endblock %}
+{% block javascripts %}
+    {% javascripts '@MainBundle/Resources/public/js/*' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
 </body>
 </html>
